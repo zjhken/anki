@@ -10,7 +10,7 @@ mkdir protoc
 cd protoc
 curl -LO $PB_REL/download/v3.15.8/protoc-3.15.8-linux-x86_64.zip
 unzip protoc-3.15.8-linux-x86_64.zip
-ln -s $PWD/bin/protoc /usr/bin/protoc
+ln --force -s $PWD/bin/protoc /usr/bin/protoc
 cd ..
 mkdir -p ./ftl/core-repo/core ./ftl/qt-repo/desktop
 PROTOC=/usr/bin/protoc cargo install --path rslib/sync
