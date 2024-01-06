@@ -3,7 +3,9 @@
 # How to build the sync server in Ubuntu
 I make the sync server can be built on Ubuntu server
 1. install the protobuf compiler
-`sudo apt install protobuf-compiler`
+`sudo apt install protobuf-compiler` But the version will be old most of the time
+so we should download it from Github
+
 2. create empty folder in ftl
 `mkdir ./ftl/core-repo/core ./ftl/qt-repo/desktop`
 3. Run build command
