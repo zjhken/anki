@@ -22,6 +22,7 @@ pub fn write_rust_protos(descriptors_path: PathBuf) -> Result<DescriptorPool> {
     let tmp_descriptors = out_dir.join("descriptors.tmp");
     prost_build::Config::new()
         .out_dir(&out_dir)
+        .protoc_arg("--experimental_allow_proto3_optional")
         .file_descriptor_set_path(&tmp_descriptors)
         .type_attribute(
             "Deck.Filtered.SearchTerm.Order",

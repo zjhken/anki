@@ -1,5 +1,14 @@
 # Anki
 
+# How to build the sync server in Ubuntu
+I make the sync server can be built on Ubuntu server
+1. install the protobuf compiler
+`sudo apt install protobuf-compiler`
+2. create empty folder in ftl
+`mkdir ./ftl/core-repo/core ./ftl/qt-repo/desktop`
+3. Run build command
+`PROTOC=/usr/bin/protoc cargo install --path rslib/sync`
+
 [![Build status](https://badge.buildkite.com/c9edf020a4aec976f9835e54751cc5409d843adbb66d043bd3.svg?branch=main)](https://buildkite.com/ankitects/anki-ci)
 
 This repo contains the source code for the computer version of
