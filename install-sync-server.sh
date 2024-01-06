@@ -6,7 +6,7 @@ PB_REL="https://github.com/protocolbuffers/protobuf/releases"
 if ! which curl; then
 	sudo apt install curl -y
 fi
-mkdir protoc
+mkdir -p protoc
 cd protoc
 curl -LO $PB_REL/download/v3.15.8/protoc-3.15.8-linux-x86_64.zip
 unzip protoc-3.15.8-linux-x86_64.zip
